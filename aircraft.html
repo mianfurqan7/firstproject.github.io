@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            overflow-x: hidden;
+
+        }
+        #nav{
+            height: 120px;
+            width: 100%;
+            background: black;
+            position: fixed;
+            top: 0;
+            z-index: 5;
+        }
+        #logo{
+                position: absolute;
+                top: 60px;
+                left: 100px;
+        }
+        #main{
+            /* position: relative; */
+            position: absolute;
+            left: 450px;
+        top: 25px;
+        }
+        #mainlist{
+            display: inline-block;
+            padding-left: 25px;
+            /* width: auto; */
+            box-sizing: border-box;
+            position: relative;
+            top: 30px;
+        }
+        #mainlist a{
+            text-decoration: none;
+            color: white;
+        }
+        #mainlist a:hover{
+            border-bottom: 2px solid blue;
+        }
+        #header{
+            width: 100%;
+            height: 130vh;
+            background: url(./images/flarislar01_filtr.jpg);
+            background-position: center;
+            margin-top: -150px;
+            background-size: cover;
+            box-sizing: border-box;
+        }
+        #logo2{
+            width: 30px;
+            height: 10px;
+            margin-left: 380px;
+        }
+        #logo3{
+            width: 30px;
+            height: 10px;
+            margin-left: 440px;
+            margin-top: -9px;
+            box-sizing: border-box;
+        }
+        #div1{
+            width: 500px;
+            height: 50px;
+            font-size: 2rem;
+            font-family: inherit;
+            color: skyblue;
+            margin-left: 370px;
+            position: relative;
+            top: 220px;
+        }
+        #div2{
+            text-align: center;
+            font-family: inherit;
+            font-size: 2rem;
+            color: white;
+            position: relative;
+            top: 230px;
+        }
+        #div3{
+            width: 100%;
+            height: 300px;
+            margin-top: 500px;
+        }
+        #div4{
+            width: 100px;
+            height: 20px;
+            color: black;
+            margin-left: 400px;
+            margin-top: -50px;
+            font-size: 1.3rem;
+            font-family: inherit;
+        }
+        #div4:hover{
+            color: gray;
+        }
+        #div5{
+            width: 100px;
+            height: 20px;
+            color: black;
+            margin-left: 500px;
+            margin-top: -19px;
+            font-size: 1.3rem;
+            font-family: inherit;
+        }
+        #div5:hover{
+            color: gray;
+        }
+        #div6{
+            width: 100px;
+            height: 20px;
+            color: black;
+            margin-left: 590px;
+            margin-top: -19px;
+            font-size: 1.3rem;
+            font-family: inherit;
+        }
+        #div6:hover{
+            color: gray;
+        }
+        #div7{
+            width: 100px;
+            height: 20px;
+            color: black;
+            margin-left: 710px;
+            margin-top: -19px;
+            font-size: 1.3rem;
+            font-family: inherit;
+        }
+        #div7:hover{
+            color: gray;
+        }
+        #div8{
+            width: 100px;
+            height: 20px;
+            color: black;
+            margin-left: 850px;
+            margin-top: -19px;
+            font-size: 1.3rem;
+            font-family: inherit;
+        }
+        #div8:hover{
+            color: gray;
+        }
+        #div9{
+            width: 100%;
+            height: 100vh;
+        }
+        #div10{
+            width: 100%;
+            height: 100vh;
+            background-image: url(./images/tlo_do_foty.png);
+            margin-top: -570px;
+        }
+        #div11{
+            width: 100%;
+            height: 90vh;
+            background-image: url(./images/fota-copy1-1.png);
+            background-repeat: no-repeat;
+            margin-top: -320px;
+            margin-left: 100px;
+            
+        }
+        #div12{
+            width: 600px;
+            height: 50px;
+            font-size: 2rem;
+            font-family: inherit;
+            color: black;
+            margin-left: 480px;
+            position: relative;
+            top: -750px;
+        }
+        #div13{
+            text-align: center;
+            width: 620px;
+            height: 130px;
+            margin-left: 320px;
+            margin-top: -720px;
+            font-size: 1rem;
+            color: black;
+        }
+        #div14{
+            width: 600px;
+            height: 50px;
+            font-size: 2rem;
+            font-family: inherit;
+            color: black;
+            margin-left: 520px;
+            position: relative;
+            top: 500px;
+        }
+        #div15{
+            width: 900px;
+            height: 50px;
+            font-size: 1rem;
+            font-family: inherit;
+            color: black;
+            margin-left: 330px;
+            position: relative;
+            top: 510px;
+        }
+        #div16{
+            width: 100%;
+            height: 100vh;
+        }
+        #div17{
+            width: 440px;
+            height: 400px;
+            border: 1px solid gray;
+            margin-left: 100px;
+            margin-top: -80px;
+        }
+        #div18{
+            width: 390px;
+            height: 50px;
+            font-family: inherit;
+            font-size: 1.2rem;
+            margin-left: 130px;
+            margin-top: -340px;
+        }
+        #div19{
+            width: 340px;
+            font-family: inherit;
+            margin-left: 140px;
+            font-size: 1.1rem;
+        }
+        #div20{
+            width: 700px;
+            height: 400px;
+            background-image: url(./images/wlasciwosci_przelomowy.jpg);
+            margin-left: 700px;
+            margin-top: -300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+    
+        <div id="logo">
+            <img src="./images/LOGO_FLARIS-1.png" alt="">
+            <div id="logo2"><img src="./images/en.png" alt=""></div>
+            <div id="logo3"><img src="./images/pl.png" alt=""></div>
+
+        </div>
+    <ul id="main">
+        <li id="mainlist"><a href="">AIRCRAFT </a></li>
+        <li id="mainlist"><a href="">PILOTING COURSES </a></li>
+        <li id="mainlist"><a href="">PURCHASE </a></li>
+        <li id="mainlist"><a href="">NEWS </a></li>
+        <li id="mainlist"><a href="">OUR STORY </a></li>
+        <li id="mainlist"><a href="">CONTACT </a></li>
+
+    </ul>
+</div>
+<div id="header">
+    <div id="div1">› THE FASTEST PERSONAL JET ‹</div>
+    <div id="div2">SPEED – RANGE – FREEDOM – GRASS AIRSTRIPS TAKE-OFF </div>
+    <!-- <span class="scroll-down et-pb-icon">?</span> -->
+    <div id="div3"></div>
+        <div id="div4">Features</div>
+            <div id="div5">Safety</div>
+            <div id="div6">Fuselage</div>
+            <div id="div7">Specification</div>
+            <div id="div8"> Buy</div>
+            <div id="div9"></div>
+            <div id="div10"></div>
+
+            <div id="div11"></div>
+            <div id="div12"> <span style="color: rgb(7, 185, 255);"> ›</span> FLARIS & LAR 01 <span style="color: rgb(7, 185, 255);"> ‹</span></div>
+
+    <!-- <i class="fas fa-angle-double-down"></i> -->
+            <div id="div13">The first and only aircraft of its type in the world, FLARIS LAR 01 unites jet-tier performance with levels of safety and economic accessibility previously reserved solely for small general aviation units. The cutting-edge construction made overcoming many traditional limitations possible and resulted in creation of an internationally exceptional aircraft!</div>
+            <div id="div14"><span style="color: rgb(7, 185, 255);"> ›</span> FEATURES <span style="color: rgb(7, 185, 255);"> ‹</span></div>
+            <div id="div15">FLARIS LAR 1 is a single-engine jet aircraft with lightweight, composite construction. It <br> creates a new category of small, agile jets, ideal for quick movement for any purpose.</div>
+            <div id="div16"></div>
+            <div id="div17"></div>
+            <div id="div18">SOAR TO A HIGHER LEVEL OF COMFORT</div>
+            <div id="div19">The intuition of piloting FLARIS LAR 1 is apparent in its minimal operations, secure stall, and automatic spin recovery. The jet was designed to be flown by a single pilot (with Garmin G600 Txi radio and navigation system and FFAS® interactive onboard computer acting as a copilot). The only qualification required to fly FLARIS LAR 1 is a Private Pilot License (PPL).</div>
+            <div id="div20"></div>
+</div>
+</body>
+</html>
